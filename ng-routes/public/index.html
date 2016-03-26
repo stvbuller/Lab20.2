@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="RoutingApp">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <title>Angular App</title>
+    <base href="/" />
+  </head>
+  <body>
+    <h1>This is the AngularJS Routing App</h1>
+    <ul>
+      <li><a href="/javascript">Javascript</a></li>
+      <li><a href="/jquery">jQuery</a></li>
+      <li><a href="/angular">AngularJS</a></li>
+      <li><a href="/nodejs">Node.js</a></li>
+      <li><a href="/mongodb">MongoDB</a></li>
+    </ul>
+
+    <ng-view></ng-view>
+    <ng-include src="'footer.html'"></ng-include>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular-route.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
